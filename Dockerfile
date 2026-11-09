@@ -34,7 +34,7 @@ COPY --from=build --chown=65532:65532 /out/data /data
 
 # data dir as a writable volume mount point.
 USER nonroot:nonroot
-VOLUME ["/data"]
+
 ENV APILOG_STORAGE_DATA_DIR=/data
 
 EXPOSE 7861 7862
